@@ -17,7 +17,7 @@ export const Navbar = ({ children }) => {
   const menuItem = [
     {
       path: "/",
-      name: "Home",
+      name: "home",
       icon: <FaTh />,
     },
     {

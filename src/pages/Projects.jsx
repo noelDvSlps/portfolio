@@ -37,7 +37,11 @@ export const Projects = () => {
         <div>
           {projects.map((project, index) => (
             <div className="project" key={index}>
-              <img src={project.image} alt="" />
+              <img
+                src={project.image}
+                alt=""
+                style={{ borderRadius: "12px" }}
+              />
               <div>{project.title}</div>
               <div>{project.description}</div>
               <Button>Case Study</Button>
