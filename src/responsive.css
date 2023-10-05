@@ -45,6 +45,10 @@
   .page-body {
     font-size: 100%;
   }
+
+  .project img {
+    width: 100%;
+  }
   .footer {
     flex-direction: column;
     justify-content: space-around;
@@ -72,6 +76,10 @@
   }
   .link {
     width: fit-content;
+  }
+
+  .project img {
+    width: 75%;
   }
 }
 @media (min-width: 900px) {
