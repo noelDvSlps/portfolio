@@ -6,6 +6,6 @@ export const Bars = () => {
   return !isOpen ? (
     <FaBars onClick={toggle} />
   ) : (
-    <AiOutlineCloseCircle onClick={toggle} />
+    <AiOutlineCloseCircle onClick={toggle} style={{ fontSize: "1.25em" }} />
   );
 };

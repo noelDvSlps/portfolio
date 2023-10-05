@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { useNavbar } from "../providers/navbarProvider";
 import { Bars } from "./Bars";
 import { Footer } from "./Footer";
-import Background from "../assets/images/react.jpg";
+// import Background from "../assets/images/react.jpg";
 export const Navbar = ({ children }) => {
   const maxSizeToShowBurger = useRef(600);
   const { isOpen, setIsOpen } = useNavbar();

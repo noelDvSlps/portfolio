@@ -31,10 +31,6 @@ export const Projects = () => {
       <div className="page-body">
         <div>Personal and Clients projects</div>
         <div>
-          Here you will find what I do and my current skills mostly in
-          programming.
-        </div>
-        <div>
           {projects.map((project, index) => (
             <div className="project" key={index}>
               <img

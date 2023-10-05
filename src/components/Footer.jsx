@@ -3,15 +3,7 @@ export const Footer = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <hr />
-      <div
-        style={{
-          // backgroundColor: "gray",
-          color: "white",
-          height: "100px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="footer">
         <div>© Copyright 2023. Made by Noel Pulido</div>
         <div>
           <AiOutlineLinkedin style={{ fontSize: "2em" }} />

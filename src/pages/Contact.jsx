@@ -16,7 +16,11 @@ export const Contact = () => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="form.message">
               <Form.Label>Enter your message here</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control
+                as="textarea"
+                rows={5}
+                placeholder="Enter your message"
+              />
             </Form.Group>
             <Button type="submit">Submit</Button>
           </Form>

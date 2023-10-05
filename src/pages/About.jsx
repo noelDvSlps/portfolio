@@ -10,48 +10,18 @@ export const About = () => {
           textAlign: "center",
         }}
       >
-        <div>
+        <div
+          style={{
+            margin: "30px 0px",
+            fontSize: "1em",
+            fontWeight: "300px",
+            textAlign: "center",
+            whiteSpace: "pre-wrap",
+          }}
+        >
           Here you will find what I do and my current skills mostly in
-          programming.
-        </div>
-        <div>
-          Do you have an{" "}
-          <span
-            style={{
-              color: "yellow",
-              fontSize: "3em",
-            }}
-          >
-            IDEA ?{" "}
-          </span>
-          let me turn it into
-          <div
-            style={{
-              color: "blue",
-              fontSize: "3em",
-            }}
-          >
-            REALITY
-          </div>
-          <span
-            style={{
-              color: "yellow",
-              fontSize: "7em",
-              padding: 0,
-              margin: 0,
-            }}
-          >
-            :
-          </span>
-          let me
-          <span
-            style={{
-              color: "blue",
-              fontSize: "3em",
-            }}
-          >
-            WORK ON IT
-          </span>
+          programming. &#10; Do you have an idea? &#10; Let&apos;s turn it into
+          reality!
         </div>
 
         <Button> Contact</Button>

@@ -45,6 +45,10 @@
   .page-body {
     font-size: 100%;
   }
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 600px) {
