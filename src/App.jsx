@@ -9,6 +9,7 @@ import { Projects } from "./pages/Projects";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { NavbarProvider } from "./providers/navbarProvider";
+import { Project } from "./pages/Project";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<Projects />}></Route>
+            <Route path="/projects/:projectId" element={<Project />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/product" element={<Product />} />
           <Route path="/contact" element={<Contact />} />

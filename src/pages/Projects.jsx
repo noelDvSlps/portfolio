@@ -1,30 +1,15 @@
 import { Button } from "react-bootstrap";
-import imgBattleship from "../assets/images/projects/battleship.png";
-import imgItemTracker from "../assets/images/projects/item-tracker 2.png";
+
+import { useNavigate } from "react-router-dom";
+import { useNavbar } from "../providers/navbarProvider";
 
 export const Projects = () => {
-  const projects = [
-    {
-      image: imgBattleship,
-      title: "Project 1",
-      description: "description 1",
-    },
-    {
-      image: imgItemTracker,
-      title: "Project 2",
-      description: "description 2",
-    },
-    {
-      image: imgBattleship,
-      title: "Project 1",
-      description: "description 1",
-    },
-    {
-      image: imgItemTracker,
-      title: "Project 2",
-      description: "description 2",
-    },
-  ];
+  const navigate = useNavigate();
+  const nav = (id) => {
+    navigate(`/projects/${id}`);
+  };
+  const { projects } = useNavbar();
+
   return (
     <div className="page-container" style={{ height: "fit-content" }}>
       <div className="page-title"> Projects </div>
@@ -39,8 +24,8 @@ export const Projects = () => {
                 style={{ borderRadius: "12px" }}
               />
               <div>{project.title}</div>
-              <div>{project.description}</div>
-              <Button>Case Study</Button>
+              <p>{project.description}</p>
+              <Button onClick={() => nav(project.id)}>Case Study</Button>
             </div>
           ))}
         </div>
