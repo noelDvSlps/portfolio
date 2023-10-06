@@ -34,7 +34,9 @@ export const Project = () => {
           ))}
         </div>
 
-        <Button href={result[0].link}>LINK</Button>
+        <Button href={result[0].link} target="_blank">
+          LINK
+        </Button>
       </div>
     </div>
   );

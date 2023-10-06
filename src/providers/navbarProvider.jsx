@@ -21,7 +21,7 @@ export const NavbarProvider = ({ children }) => {
       description: `Classic game to make opponent’s ships sinks first before they sink yours. `,
       overview: `● Built a capstone project using VueJS, which my bootcamp did not teach 
       ● Deployed backend through Render.com’s managed server using mongoDB database`,
-      tools: ["Vue", "MongoDB"],
+      tools: ["Vue", "MongoDB", "Nodejs", "ExpressJs", "Mongoose"],
       link: "https://battleship-opal.vercel.app/",
     },
     {
@@ -36,7 +36,7 @@ export const NavbarProvider = ({ children }) => {
       ● Custom seeds for reliable testing, and for recovery purposes.
       ● Used Cloudinary for adding images
       `,
-      tools: ["React"],
+      tools: ["React", "Prisma", "Sqlite", "Cloudinary", "Nodejs", "ExpressJs"],
       link: "https://item-tracker-lovat.vercel.app/",
     },
   ];
