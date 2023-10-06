@@ -11,32 +11,34 @@ export const Project = () => {
   //title, img, overview, tools used, project link, go back button
 
   return (
-    <div className="page-body">
-      <div className="project">
-        <img src={result[0].image} alt="" style={{ borderRadius: "12px" }} />
-        <div>{result[0].title}</div>
-        <p>{result[0].description}</p>
-        <p>{result[0].overview}</p>
-        <div>Tools</div>
-        <div style={{ display: "flex" }}>
-          {result[0].tools.map((tool, index) => (
-            <span
-              style={{
-                margin: "5px",
-                padding: "5px 10px",
-                borderRadius: "8px",
-                backgroundColor: "gray",
-              }}
-              key={index}
-            >
-              {tool}
-            </span>
-          ))}
-        </div>
+    <div className="page-container" style={{ height: "fit-content" }}>
+      <div className="page-body">
+        <div className="project">
+          <img src={result[0].image} alt="" style={{ borderRadius: "12px" }} />
+          <div>{result[0].title}</div>
+          <p>{result[0].description}</p>
+          <p>{result[0].overview}</p>
+          <div>Tools</div>
+          <div style={{ display: "flex" }}>
+            {result[0].tools.map((tool, index) => (
+              <span
+                style={{
+                  margin: "5px",
+                  padding: "5px 10px",
+                  borderRadius: "8px",
+                  backgroundColor: "gray",
+                }}
+                key={index}
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
 
-        <Button href={result[0].link} target="_blank">
-          LINK
-        </Button>
+          <Button href={result[0].link} target="_blank">
+            LINK
+          </Button>
+        </div>
       </div>
     </div>
   );
