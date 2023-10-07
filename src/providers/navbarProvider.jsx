@@ -8,7 +8,6 @@ const NavbarContext = createContext({});
 
 export const NavbarProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => {
     setIsOpen(!isOpen);
   };

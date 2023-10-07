@@ -46,8 +46,16 @@
     font-size: 100%;
   }
 
+  .project {
+    padding: 10px;
+  }
+
   .project img {
     width: 100%;
+  }
+
+  .project .overview {
+    text-align: center;
   }
   .footer {
     flex-direction: column;
@@ -83,6 +91,9 @@
   }
 }
 @media (min-width: 900px) {
+  .project .overview {
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
 }

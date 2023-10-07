@@ -81,13 +81,8 @@ export const Navbar = ({ children }) => {
                 className={"link"}
                 onClick={() => setIsOpen(false)}
               >
-                {/* <div className="icon" style={{ fontSize: "20px" }}>
-                  {item.icon}
-                </div> */}
                 <div
                   style={{
-                    //   display:
-                    //     windowWidth > 767 ? "block" : isOpen ? "block" : "none",
                     transition: "all 0.5s",
                   }}
                   className="link_text"

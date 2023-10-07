@@ -31,7 +31,7 @@ export const Projects = () => {
             </div>
           ))}
         </div>
-        <Button> Contact</Button>
+        <Button onClick={() => navigate("/contact")}> Contact</Button>
       </div>
     </div>
   );

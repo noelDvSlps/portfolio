@@ -146,10 +146,8 @@ main {
   justify-content: center;
   height: auto;
   width: 100%;
-  /* max-width: 750px; */
   border: 1px solid #66d9ed;
   border-radius: 16px;
-  padding: 25px;
   min-height: 385px;
   margin: 25px 0;
 }
@@ -160,12 +158,12 @@ main {
 
 .project img {
   width: 75%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 20px 0;
 }
 
 .project .overview {
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
 }
 
