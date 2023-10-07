@@ -158,12 +158,12 @@ main {
 
 .project img {
   width: 75%;
-  max-width: 600px;
+  max-width: 390px;
   margin: 20px 0;
 }
 
 .project .overview {
-  max-width: 600px;
+  max-width: 390px;
   text-align: left;
 }
 

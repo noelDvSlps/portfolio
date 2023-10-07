@@ -11,8 +11,17 @@ export const Contact = () => {
     setValidated(false);
   };
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    sendEmail(e);
+  };
+
+  const sendEmail = (e) => {
     e.target.querySelector("#button").innerText = "Sending...";
 
     emailjs
@@ -24,7 +33,6 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result);
           if (result.text === "OK") {
             toast.success("Message sent!");
             setValidated(true);
@@ -34,7 +42,7 @@ export const Contact = () => {
           }
         },
         (error) => {
-          toast.error(error.text);
+          toast.error(error.text || "Something went wrong, please try again");
         }
       )
       .then(() => {
@@ -50,12 +58,13 @@ export const Contact = () => {
           <Form
             ref={formRef}
             id="form"
-            onSubmit={sendEmail}
+            onSubmit={handleSubmit}
             validated={validated}
           >
             <Form.Group className="mb-3" controlId="form.name">
               <Form.Label>Name</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Enter your name"
                 name="user_name"
@@ -64,6 +73,7 @@ export const Contact = () => {
             <Form.Group className="mb-3" controlId="form.email">
               <Form.Label>Email address</Form.Label>
               <Form.Control
+                required
                 type="email"
                 placeholder="Enter your email"
                 name="user_email"
@@ -72,6 +82,8 @@ export const Contact = () => {
             <Form.Group className="mb-3" controlId="form.message">
               <Form.Label>Enter your message here</Form.Label>
               <Form.Control
+                required
+                minLength={10}
                 as="textarea"
                 rows={5}
                 placeholder="Enter your message"

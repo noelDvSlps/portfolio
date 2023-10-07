@@ -50,6 +50,11 @@
     padding: 10px;
   }
 
+  .project img,
+  .project .overview {
+    max-width: 390px;
+  }
+
   .project img {
     width: 100%;
   }
@@ -91,9 +96,21 @@
   }
 }
 @media (min-width: 900px) {
+  .project {
+    padding: 10px;
+  }
+  .project img,
+  .project .overview {
+    max-width: 380px;
+  }
+
   .project .overview {
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
+  .project img,
+  .project .overview {
+    max-width: 500px;
+  }
 }
