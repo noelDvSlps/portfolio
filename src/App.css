@@ -134,6 +134,10 @@ main {
 
 .projects {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project {
@@ -145,7 +149,7 @@ main {
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 100%;
+  width: 99.75%;
   border: 1px solid #66d9ed;
   border-radius: 16px;
   min-height: 385px;
