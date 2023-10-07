@@ -24,9 +24,13 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          toast.success(result.text);
-          setValidated(true);
-          handleReset();
+          if (result.text === "ok") {
+            toast.success("Message sent!");
+            setValidated(true);
+            handleReset();
+          } else {
+            toast.error("Something went wrong, please try again");
+          }
         },
         (error) => {
           toast.error(error.text);
