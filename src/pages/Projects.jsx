@@ -15,7 +15,7 @@ export const Projects = () => {
       <div className="page-title"> Projects </div>
       <div className="page-body">
         <div>Personal and Clients projects</div>
-        <div>
+        <div className="projects">
           {projects.map((project, index) => (
             <div className="project" key={index}>
               <img
@@ -23,9 +23,11 @@ export const Projects = () => {
                 alt=""
                 style={{ borderRadius: "12px" }}
               />
-              <div>{project.title}</div>
-              <p>{project.description}</p>
-              <Button onClick={() => nav(project.id)}>Case Study</Button>
+              <div className="overview">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <Button onClick={() => nav(project.id)}>Case Study</Button>
+              </div>
             </div>
           ))}
         </div>

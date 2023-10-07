@@ -132,14 +132,21 @@ main {
   height: 100%;
 }
 
+.projects {
+  width: 100%;
+}
+
 .project {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   height: auto;
   width: 100%;
-  max-width: 750px;
+  /* max-width: 750px; */
   border: 1px solid #66d9ed;
   border-radius: 16px;
   padding: 25px;
@@ -147,14 +154,29 @@ main {
   margin: 25px 0;
 }
 
-.project-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction: row;
+.project .title {
+  font-size: 2em;
 }
+
 .project img {
   width: 75%;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.project .overview {
+  max-width: 500px;
+  text-align: left;
+}
+
+.project .tools {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: left; */
+  margin-bottom: 20px;
 }
 
 .contact-form {
