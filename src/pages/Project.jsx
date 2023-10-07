@@ -19,19 +19,20 @@ export const Project = () => {
           <p>{result[0].description}</p>
           <p>{result[0].overview}</p>
           <div>Tools</div>
-          <div style={{ display: "flex" }}>
+          <div className="project-container">
             {result[0].tools.map((tool, index) => (
-              <span
+              <div
                 style={{
                   margin: "5px",
                   padding: "5px 10px",
                   borderRadius: "8px",
                   backgroundColor: "gray",
+                  width: "fit-content",
                 }}
                 key={index}
               >
                 {tool}
-              </span>
+              </div>
             ))}
           </div>
 

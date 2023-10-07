@@ -147,6 +147,12 @@ main {
   margin: 25px 0;
 }
 
+.project-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .project img {
   width: 75%;
 }
