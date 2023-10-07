@@ -24,7 +24,8 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          if (result.text === "ok") {
+          console.log(result);
+          if (result.text === "OK") {
             toast.success("Message sent!");
             setValidated(true);
             handleReset();
